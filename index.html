@@ -2,28 +2,101 @@
 <html>
 <head>
 <style> 
+body {  background-image: url("images/shelf.jpg");
+  min-height: 500px;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+  background-size: cover;}
 
-h1 { color: powderblue;
+h1 { color: white;
 	font-family: verdana;
 	font-size: 48pt;
-	text-align: center;}
+	text-align: center;
+	margin: 75px 75px;
+	text-shadow: 4px 4px powderblue;}
 
-p { color: gray;
+p { color: #e0ecff;
 	font-family: courier;
-	font-size: 18pt;}
+	font-size: 18pt;
+	text-align: center;
+	text-shadow: 2px 2px #0d4296;
+	}
+	
+/* unvisited link */
+a:link {
+  color: powderblue;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: #cdf9b1;
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color: #f3b3fc;
+  text-decoration: none;
+}
+	
+.container {
+  position: relative;
+  margin: 50px 25px;
+  }
+	
+.image {display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  }
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  font-family: courier;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
 </style>
 
-<title>Aleisha's Portfolio</title>
+<title>Thirsty Feen.</title>
 </head>
 
 <body>
 
-<h1>Start here.</h1>
+<h1>Feeling Thirsty?</h1>
 
-<p> This is the first page.</p>
-
-<p> <a href="page2.html"> Go to page 2.
-</a>
+<p> Please select item to start.
 </p>
+
+<div class="container">
+	<a href="page2.html">
+		<img class="image" src="images/pixel-bottle.png" alt="bottle" style="width:10%;height:10%;">
+	</a>
+	<div class="middle">
+		<div class="text"> *place into bag* </div>
+	</div>
+</div>
 
 </body> </html>

@@ -2,25 +2,109 @@
 <html>
 <head>
 <style> 
+body {  background-image: none);
+  min-height: 500px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;}
 
 h1 { color: powderblue;
 	font-family: verdana;
 	font-size: 48pt;
-	text-align: center;}
+	text-align: center;
+	margin: 75px 75px}
 
-p { color: gray;
+p { color: powderblue;
+	width: 300px;
+	height: 200px;
 	font-family: courier;
-	font-size: 18pt;}
+	font-size: 20pt;
+	margin: 0 auto;
+	padding-top: 30px;
+	overflow: hidden;
+	}
+	
+.wrap {
+	display:flex;align-items: center}
+	
+/* unvisited link */
+a:link {
+  color: powderblue;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: #cdf9b1;
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color: #f3b3fc;
+  text-decoration: none;
+}
+	
+.container {
+  position: relative;
+  margin: 50px 25px;
+  }
+	
+.image {display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  }
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  font-family: courier;
+  color: white;
+  font-size: 20px;
+  padding: 20px 32px;
+}
+
+  
 </style>
 
-<title>Aleisha's Portfolio</title>
+
+<title>Thirsty Feen.</title>
 </head>
 
 <body>
-
-<h1>The Third Page.</h1> <p> ta-dahhh!</p>
-
-<p> <a href="index.html"> Home.
+<h1>Uhh...</h1>
+<p>
+	<img class="image" src="images/where.gif" alt="where's the recycling bin?"
+	>
 </p>
 
-</body> </html>
+<div class="wrap">
+	<p>
+		<a href="page4.html"> "I'll just leave it here." </a>
+	</p>
+	<p>
+		<a href="page5.html"> "I'll hold on to it for now." </a>
+	</p>
+</div>
+
+</body>
+</html>

@@ -2,26 +2,107 @@
 <html>
 <head>
 <style> 
+body {  background-image: url("images/holding-bottle.jpg");
+  min-height: 500px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;}
 
-h1 { color: powderblue;
+h1 { color: white;
 	font-family: verdana;
 	font-size: 48pt;
-	text-align: center;}
+	text-align: right;
+	margin: 75px 75px}
 
-p { color: gray;
+p { color: powderblue;
 	font-family: courier;
-	font-size: 18pt;}
+	font-size: 18pt;
+	text-shadow: 2px 2px #000;
+	}
+	
+/* unvisited link */
+a:link {
+  color: powderblue;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: #cdf9b1;
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color: #f3b3fc;
+  text-decoration: none;
+}
+	
+.container {
+  position: relative;
+  margin: 50px 25px;
+  }
+	
+.image {display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  }
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  font-family: courier;
+  color: white;
+  font-size: 20px;
+  padding: 20px 32px;
+}
+
 </style>
 
-<title>Aleisha's Portfolio</title>
+<title>Thirsty Feen.</title>
 </head>
 
 <body>
+<h1>On with your day...</h1>
 
-<h1>The Second Page</h1> <p> Welcome </p>
+<p style="margin-left:15%;">*gulp*</p>
 
-<p> <a href="page3.html">Go to page 3
-</a>
-</p>
+<p style="margin-left:25%;">*gulp*</p>
+<p style="margin-left:35%;"><i>*sip*</i></p>
+<p style="margin-left:45%; color:white;"><i>*slurrrrrpppp*</i></p>
+<p style="margin-left:45%; color:#3992ff;"><i>*crinkles*</i></p>
 
-</body> </html>
+<p style="margin-left:45%">
+	<a href="page8.html">
+	<i><b>Ahhhh......</b></i>
+	</a></p>
+
+<div class="container">
+	<a href="page3.html">
+		<img class="image" src="images/huh.png" alt="confused emoji" style="width:10%;height:10%;">
+	</a>
+	<div class="middle">
+		<div class="text"> "It's empty already?? </div>
+	</div>
+</div>
+</body>
+</html>
